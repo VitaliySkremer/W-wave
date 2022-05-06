@@ -18,13 +18,10 @@ window.addEventListener("DOMContentLoaded", function(){
 
  window.addEventListener("resize", function () {
   if (window.innerWidth <= 576) {
-    // 0...768
     document.querySelectorAll(".hide-mobile").forEach(function(path){
       path.classList.add("hide");
     })
-    // document.querySelector(".hide-mobile").classList.add('hide');
   } else {
-    // 769...Inf
     document.querySelectorAll(".hide-mobile").forEach(function(path){
       path.classList.remove("hide");
     })
